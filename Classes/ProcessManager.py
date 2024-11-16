@@ -1,6 +1,5 @@
-#Diego Ellwanger e Johann Schneider
 class ProcessManager:
-    def __init__(self, max_size=100):
+    def init(self, max_size=100):
         self.process_pool = []
         self.max_size = max_size
 

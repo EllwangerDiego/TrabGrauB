@@ -1,7 +1,8 @@
 #Diego Ellwanger e Johann Schneider
-from Process import Process
+from Process import Processo
+from Classes import ComputingProcess
 
-class ReadingProcess(Process):
+class ReadingProcess(Processo):
     def __init__(self, pid, process_pool):
         #pid = Process ID (identificador do processo)
         #process_pool = Lista dos processos
@@ -22,5 +23,5 @@ class ReadingProcess(Process):
                       self.process_pool.append(computing_process)
 
           #Limpa o arquivo apos ler
-          with open ("computation.txt", w) as file:
+          with open ("computation.txt", 'w') as file:
                 file.truncate(0)

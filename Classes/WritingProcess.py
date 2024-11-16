@@ -1,7 +1,7 @@
 #Diego Ellwanger e Johann Schneider
-from Process import Process
+from Process import Processo
 
-class WritingProcess(Process):
+class WritingProcess(Processo):
     def __init__(self, pid, expression):
         
         super().__init__(pid)
