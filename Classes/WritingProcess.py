@@ -1,18 +1,31 @@
-#Diego Ellwanger e
+#Diego Ellwanger e Johann Schneider
+from Process import Process
 
-class WritingProcess:
-    def __init__(self,pid):
-        self.__pid = pid
+class WritingProcess(Process):
+    def __init__(self, pid, expression):
+        
+        super().__init__(pid)
+        self._expression = expression
 
     @property
-    def pid(self):
-        return self.__pid
+    def expression(self):
+        return self._expression
 
-    @pid.setter
-    def pid(self, pid):
-        self.__pid = pid
+    @expression.setter
+    def expression(self, new_expression):
+        if isinstance(new_expression, str):
+            self._expression = new_expression  # Corrige a atribuição
+        else:
+            raise ValueError("A expressão deve ser uma string.")
 
-  
+        
+
+
+    def execute(self):
+        with open("computation.txt", "a") as file:
+            file.write(self.expression + "\n")
+        print(f"WritingProcess (PID {self.pid}): Expressão '{self.expression}' gravada com sucesso.")
+
     
     #Função para escrever no arquivo
     def escrever_arquivo(self, pid, expressao):
