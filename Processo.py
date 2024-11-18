@@ -1,8 +1,12 @@
 #Diego Ellwanger e Johann Schneider
-class Processo:
+from abc import ABC, abstractmethod
+
+class Processo(ABC):
     def __init__(self, pid):
         self.pid = pid
     
+    @abstractmethod
     def execute(self):
-        raise NotImplementedError("Subclasse deve implementar este método.")
+        pass  # A subclasse precisa implementar o método
+
 
