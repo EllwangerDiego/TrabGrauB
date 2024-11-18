@@ -1,3 +1,4 @@
+#Diego Ellwanger e Johann Schneider
 import os  # Biblioteca para operações relacionadas ao sistema de arquivos
 from Classes import ComputingProcess, WritingProcess, ReadingProcess, PrintingProcess
 # Importa as classes específicas de processos de um módulo externo chamado "Classes"

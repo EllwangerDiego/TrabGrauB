@@ -1,4 +1,4 @@
-
+#Diego Ellwanger e Johann Schneider
 import os  # Módulo para operações relacionadas ao sistema de arquivos
 from Process import Processo
 

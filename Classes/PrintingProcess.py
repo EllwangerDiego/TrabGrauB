@@ -1,3 +1,4 @@
+#Diego Ellwanger e Johann Schneider
 from Process import Processo  # Importa a classe base Processo, que será estendida pela classe PrintingProcess
 
 class PrintingProcess(Processo):

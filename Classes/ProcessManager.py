@@ -1,3 +1,4 @@
+#Diego Ellwanger e Johann Schneider
 class ProcessManager:
     def init(self, max_size=100):
         self.process_pool = []
